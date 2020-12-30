@@ -4,6 +4,7 @@
 </p>
 Comments:
   <% @post.comments.each do |comment| %>
+  <!-- Remember syntax of post_path -->
     <%= link_to comment.user.username, user_path(comment.user) %> said
     <%= comment.content %>
   <% end %>
